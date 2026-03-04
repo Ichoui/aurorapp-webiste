@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+// Ce fichier n'est PAS le Root Layout Next.js.
+// Le vrai RootLayout est dans `app/layout.tsx`.
+// On garde ce fichier uniquement pour éviter les imports cassés si quelqu'un l'utilisait.
 
-import "./globals.css";
-import React from 'react';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Aurorapp - Northern Lights Forecast",
@@ -29,15 +30,3 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="fr">
-      <body className="min-h-screen antialiased">{children}</body>
-    </html>
-  );
-}
