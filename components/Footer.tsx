@@ -1,44 +1,22 @@
-export default function Footer() {
-    return (
-        <footer className="px-6 py-12 border-t border-white/10">
-            <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 text-white/60">
-                <div>
-                    <h3 className="text-white text-xl font-semibold tracking-tight">
-                        <span className="gradient-text">Aurorapp</span>
-                    </h3>
-                    <p className="mt-4 text-sm leading-relaxed">
-                        Prévisions d&apos;aurores boréales en temps réel, basées sur des données scientifiques.
-                    </p>
-                </div>
+// Footer
+import styles from "./style/Footer.module.css";
 
-                <div>
-                    <h4 className="text-white font-medium mb-4">Liens</h4>
-                    <ul className="space-y-2 text-sm">
-                        <li>
-                            <a className="hover:text-white/90 transition-colors" href="#features">
-                                Fonctionnalités
-                            </a>
-                        </li>
-                        <li>
-                            <a className="hover:text-white/90 transition-colors" href="#download">
-                                Téléchargement
-                            </a>
-                        </li>
-                        <li>
-                            <a className="hover:text-white/90 transition-colors" href="#">
-                                Confidentialité
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 className="text-white font-medium mb-4">Légal</h4>
-                    <p className="text-sm">
-                        © {new Date().getFullYear()} Aurorapp. Tous droits réservés.
-                    </p>
-                </div>
-            </div>
-        </footer>
-    );
-}
+export const Footer = () => {
+  return (
+    <footer className={styles.footer}>
+      <div className={styles.container}>
+        <div className={styles.logo}>
+          <span className="material-symbols-outlined" style={{ color: "var(--primary)" }}>wb_sunny</span>
+          <span className={styles.logoText}>Aurorapp</span>
+        </div>
+        <nav className={styles.links}>
+          <a href="#" className={styles.link}>Confidentialité</a>
+          <a href="#" className={styles.link}>Conditions</a>
+          <a href="#" className={styles.link}>API</a>
+          <a href="#" className={styles.link}>Contact</a>
+        </nav>
+        <p className={styles.copy}>© 2024 Aurorapp Space Systems. Données propulsées par NOAA.</p>
+      </div>
+    </footer>
+  );
+};

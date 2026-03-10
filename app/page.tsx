@@ -1,17 +1,26 @@
-import AuroraBackground from "@/components/AuroraBackground";
-import CTA from "@/components/CTA";
-import Features from "@/components/Features";
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
+// Assemblage de la landing page
+import { AuroraBackground } from "components/AuroraBackground";
+import { Header } from "components/Header";
+import { Hero } from "components/Hero";
+import { Features } from "components/Features";
+import { Testimonial } from "components/Testimonial";
+import { CallToAction } from "components/CallToAction";
+import { Footer } from "components/Footer";
 
 export default function Home() {
   return (
     <>
       <AuroraBackground />
-      <Hero />
-      <Features />
-      <CTA />
-      <Footer />
+      <div style={{ position: "relative", display: "flex", minHeight: "100vh", flexDirection: "column" }}>
+        <Header />
+        <main style={{ flex: 1 }}>
+          <Hero />
+          <Features />
+          <Testimonial />
+          <CallToAction />
+        </main>
+        <Footer />
+      </div>
     </>
   );
 }
