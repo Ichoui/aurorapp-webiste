@@ -1,4 +1,5 @@
 // Navigation
+import Image from "next/image";
 import styles from "./style/Header.module.css";
 
 export const Header = () => {
@@ -6,7 +7,7 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.logo}>
         <span className={styles.logoIcon} aria-hidden="true">
-          <img className={styles.logoImg} src="/logo.png" alt="Logo Aurorapp" />
+          <Image className={styles.logoImg} src="/logo.png" alt="Logo Aurorapp" fill sizes="40px" priority />
         </span>
         <h2 className={styles.logoText}>Aurorapp</h2>
       </div>

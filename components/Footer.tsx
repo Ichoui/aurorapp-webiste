@@ -1,4 +1,5 @@
 // Footer
+import Image from "next/image";
 import styles from "./style/Footer.module.css";
 
 export const Footer = () => {
@@ -7,7 +8,7 @@ export const Footer = () => {
       <div className={styles.container}>
         <div className={styles.logo}>
           <span className={styles.logoIcon} aria-hidden="true">
-            <img className={styles.logoImg} src="/logo.png" alt="Logo Aurorapp" />
+            <Image className={styles.logoImg} src="/logo.png" alt="Logo Aurorapp" fill sizes="32px" />
           </span>
           <span className={styles.logoText}>Aurorapp</span>
         </div>
