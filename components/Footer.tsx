@@ -6,7 +6,9 @@ export const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <span className="material-symbols-outlined" style={{ color: "var(--primary)" }}>wb_sunny</span>
+          <span className={styles.logoIcon} aria-hidden="true">
+            <img className={styles.logoImg} src="/logo.png" alt="Logo Aurorapp" />
+          </span>
           <span className={styles.logoText}>Aurorapp</span>
         </div>
         <nav className={styles.links}>

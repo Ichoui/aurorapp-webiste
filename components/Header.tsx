@@ -5,8 +5,8 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <span className="material-symbols-outlined" style={{ fontSize: "1.875rem", color: "var(--primary)" }}>
-          wb_sunny
+        <span className={styles.logoIcon} aria-hidden="true">
+          <img className={styles.logoImg} src="/logo.png" alt="Logo Aurorapp" />
         </span>
         <h2 className={styles.logoText}>Aurorapp</h2>
       </div>
@@ -28,5 +28,3 @@ export const Header = () => {
     </header>
   );
 };
-
-
