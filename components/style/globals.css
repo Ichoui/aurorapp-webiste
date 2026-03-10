@@ -1,8 +1,13 @@
 /* Variables de couleurs et animations de base */
 
 :root {
-  --primary: #00ff95;
-  --bg-dark: #0f231b;
+  /*--primary: #00ff95;*/
+  /*--bg-dark: #0f231b;*/
+  /*--bg-light: #f5f8f7;*/
+
+  --primary: #69bfaf;        /* était #00ff95 */
+  --secondary: #8cffea;      /* NOUVEAU */
+  --bg-dark: #001e49;        /* était #0f231b */
   --bg-light: #f5f8f7;
 }
 

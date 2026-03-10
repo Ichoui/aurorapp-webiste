@@ -11,13 +11,16 @@
 .card {
   max-width: 1200px;
   margin: 0 auto;
-  background: rgba(15, 35, 27, 0.7);
+  /*background: rgba(15, 35, 27, 0.7);*/
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 255, 149, 0.1);
+  /*border: 1px solid rgba(0, 255, 149, 0.1);*/
   border-radius: 2.5rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
+
+  background: rgba(0, 30, 73, 0.7);
+  border: 1px solid rgba(105, 191, 175, 0.1);
 }
 
 @media (min-width: 1024px) {
@@ -60,9 +63,12 @@
   height: 3rem;
   border-radius: 9999px;
   background: #1e293b;
-  border: 1px solid rgba(0, 255, 149, 0.2);
+  /*border: 1px solid rgba(0, 255, 149, 0.2);*/
   overflow: hidden;
   flex-shrink: 0;
+
+  border: 1px solid rgba(105, 191, 175, 0.2);
+
 }
 
 .avatarImg {

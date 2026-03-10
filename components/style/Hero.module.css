@@ -19,14 +19,17 @@
   gap: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 9999px;
-  background: rgba(15, 35, 27, 0.7);
+  /*background: rgba(15, 35, 27, 0.7);*/
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 255, 149, 0.2);
+  /*border: 1px solid rgba(0, 255, 149, 0.2);*/
   color: var(--primary);
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.2em;
+
+  background: rgba(0, 30, 73, 0.7);                    /* était rgba(15, 35, 27, 0.7) */
+  border: 1px solid rgba(105, 191, 175, 0.1);
 }
 
 /* Title */
@@ -94,7 +97,10 @@
 }
 
 .btnPrimary:hover {
-  box-shadow: 0 0 30px rgba(0, 255, 149, 0.3);
+  /*box-shadow: 0 0 30px rgba(0, 255, 149, 0.3);*/
+
+  box-shadow: 0 0 30px rgba(105, 191, 175, 0.3);  /* était rgba(0, 255, 149, 0.3) */
+
 }
 
 .btnSecondary {
@@ -105,14 +111,16 @@
   border-radius: 0.75rem;
   height: 3.5rem;
   padding: 0 2rem;
-  background: rgba(15, 35, 27, 0.7);
+  /*background: rgba(15, 35, 27, 0.7);*/
   backdrop-filter: blur(12px);
-  border: 1px solid rgba(0, 255, 149, 0.1);
+  /*border: 1px solid rgba(0, 255, 149, 0.1);*/
   color: #f1f5f9;
   font-size: 1.125rem;
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.2s;
+  background: rgba(0, 30, 73, 0.7);                    /* était rgba(15, 35, 27, 0.7) */
+  border: 1px solid rgba(105, 191, 175, 0.2);
 }
 
 .btnSecondary:hover {

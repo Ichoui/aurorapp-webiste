@@ -7,7 +7,7 @@ export const Hero = () => {
       {/* Badge */}
       <div className={styles.badge}>
         <span className="ping-dot" />
-        Aurores actives maintenant
+        Aurores en direct
       </div>
 
       {/* Title */}

@@ -11,11 +11,9 @@ export const Footer = () => {
         </div>
         <nav className={styles.links}>
           <a href="#" className={styles.link}>Confidentialité</a>
-          <a href="#" className={styles.link}>Conditions</a>
-          <a href="#" className={styles.link}>API</a>
           <a href="#" className={styles.link}>Contact</a>
         </nav>
-        <p className={styles.copy}>© 2024 Aurorapp Space Systems. Données propulsées par NOAA.</p>
+        <p className={styles.copy}>© 2026 Aurorapp - Northern Lights. Données propulsées par NOAA.</p>
       </div>
     </footer>
   );

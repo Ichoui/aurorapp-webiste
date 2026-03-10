@@ -7,10 +7,16 @@ const features = [
     title: "Données NOAA/SWPC",
     description: "Flux directs du Space Weather Prediction Center pour une analyse sans intermédiaire.",
   },
+  // {
+  //   icon: "notifications_active",
+  //   title: "Alertes Intelligentes",
+  //   description: "Notifications instantanées dès que l'indice Kp atteint le seuil critique dans votre région.",
+  // },
   {
-    icon: "notifications_active",
-    title: "Alertes Intelligentes",
-    description: "Notifications instantanées dès que l'indice Kp atteint le seuil critique dans votre région.",
+    // Avant : notifications_active / Alertes Intelligentes
+    icon: "shield",
+    title: "Respect de la Vie Privée",
+    description: "Nous ne collectons aucune donnée personnelle. Votre navigation est 100% anonyme et sécurisée.",
   },
   {
     icon: "map",
