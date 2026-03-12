@@ -17,11 +17,11 @@ export const Footer = () => {
           </span>
           <span className={styles.logoText}>Aurorapp</span>
         </div>
-        <div className={styles.container}>
-          <a href="https://play.google.com/store/apps/details?id=io.aurora.start">
-            <img alt="Get it on Google Play" src="/images/brand/fr_generic_rgb_wo_45.png" />
-          </a>
-        </div>
+        {/*<div className={styles.container}>*/}
+        {/*  <a href="https://play.google.com/store/apps/details?id=io.aurora.start">*/}
+        {/*    <Image alt="Get it on Google Play" fill src="/images/brand/fr_generic_rgb_wo_45.png" />*/}
+        {/*  </a>*/}
+        {/*</div>*/}
         <nav className={styles.links}>
           <a href="#" className={styles.link}>
             {t('footer.privacy')}

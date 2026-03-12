@@ -1,9 +1,9 @@
 {
   "header": {
     "nav": {
-      "features": "Features",
       "noaaData": "NOAA Data",
-      "liveMap": "Live Map"
+      "features": "Features",
+      "weather": "Weather"
     },
     "cta": "Sign In"
   },

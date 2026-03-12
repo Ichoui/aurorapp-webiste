@@ -21,14 +21,14 @@ export const Header = () => {
       {/* Desktop nav */}
       <div className={styles.desktopNav}>
         <nav className={styles.navLinks}>
+          <a href="#noaa" className={styles.navLink}>
+            {t('header.nav.noaaData')}
+          </a>
           <a href="#" className={styles.navLink}>
             {t('header.nav.features')}
           </a>
           <a href="#" className={styles.navLink}>
-            {t('header.nav.noaaData')}
-          </a>
-          <a href="#" className={styles.navLink}>
-            {t('header.nav.liveMap')}
+            {t('header.nav.weather')}
           </a>
         </nav>
         <LanguageSwitcher />

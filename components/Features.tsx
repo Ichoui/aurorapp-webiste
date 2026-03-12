@@ -15,7 +15,7 @@ export const Features = () => {
   }>;
 
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='noaa'>
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>

@@ -36,7 +36,7 @@ export const Hero = () => {
         {/*    <span className="material-symbols-outlined">ios</span>*/}
         {/*    Bientôt sur l&#39;Apple Store*/}
         {/*</button>*/}
-        <button className={styles.btnSecondary}>{t('hero.learnMore')}</button>
+        <a href='#noaa' className={styles.btnSecondary}>{t('hero.learnMore')}</a>
       </div>
 
       {/* Stats */}

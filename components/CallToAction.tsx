@@ -14,7 +14,7 @@ export const CallToAction = () => {
         <p className={styles.subtitle}>{t('callToAction.subtitle')}</p>
         <div className={styles.btnWrap}>
           <a href="https://play.google.com/store/apps/details?id=io.aurora.start" target="_blank" rel="noopener noreferrer" className={styles.btn}>
-            <span className="material-symbols-outlined">install_mobile</span>
+              <span className="material-symbols-outlined">android</span>
             {t('callToAction.button')}
           </a>
         </div>

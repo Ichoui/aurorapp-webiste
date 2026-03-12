@@ -1,9 +1,9 @@
 {
   "header": {
     "nav": {
-      "features": "Fonctionnalités",
       "noaaData": "Données NOAA",
-      "liveMap": "Carte Live"
+      "features": "Fonctionnalités",
+      "weather": "Météo"
     },
     "cta": "Se connecter"
   },
