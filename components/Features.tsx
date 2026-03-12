@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
 // Grille de fonctionnalités
-import styles from "./style/Features.module.css";
-import { useTranslation } from "react-i18next";
+import styles from './style/Features.module.css';
+import { useTranslation } from 'react-i18next';
 
-const FEATURE_ICONS = ["monitoring", "shield", "map"] as const;
+const FEATURE_ICONS = ['monitoring', 'shield', 'map'] as const;
 
 export const Features = () => {
   const { t } = useTranslation();
 
-  const items = t("features.items", { returnObjects: true }) as Array<{
+  const items = t('features.items', { returnObjects: true }) as Array<{
     title: string;
     description: string;
   }>;
@@ -20,10 +20,10 @@ export const Features = () => {
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.headerLeft}>
-            <h2 className={styles.supra}>{t("features.supra")}</h2>
-            <h3 className={styles.title}>{t("features.title")}</h3>
+            <h2 className={styles.supra}>{t('features.supra')}</h2>
+            <h3 className={styles.title}>{t('features.title')}</h3>
           </div>
-          <p className={styles.headerRight}>{t("features.description")}</p>
+          <p className={styles.headerRight}>{t('features.description')}</p>
         </div>
 
         {/* Grid */}
@@ -31,7 +31,7 @@ export const Features = () => {
           {items.map((item, idx) => (
             <div key={item.title} className={styles.card}>
               <div className={styles.iconWrap}>
-                <span className="material-symbols-outlined" style={{ fontSize: "1.875rem" }}>
+                <span className="material-symbols-outlined" style={{ fontSize: '1.875rem' }}>
                   {FEATURE_ICONS[idx]}
                 </span>
               </div>

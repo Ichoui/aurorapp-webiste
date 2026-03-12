@@ -5,9 +5,9 @@
   /*--bg-dark: #0f231b;*/
   /*--bg-light: #f5f8f7;*/
 
-  --primary: #69bfaf;        /* était #00ff95 */
-  --secondary: #8cffea;      /* NOUVEAU */
-  --bg-dark: #001e49;        /* était #0f231b */
+  --primary: #69bfaf; /* était #00ff95 */
+  --secondary: #8cffea; /* NOUVEAU */
+  --bg-dark: #001e49; /* était #0f231b */
   --bg-light: #f5f8f7;
 }
 
@@ -26,7 +26,7 @@ html {
 body {
   background-color: var(--bg-dark);
   color: #f1f5f9;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
@@ -82,9 +82,15 @@ a {
 }
 
 @keyframes float {
-  0% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(10%, 5%) scale(1.1); }
-  100% { transform: translate(-5%, 10%) scale(0.9); }
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(10%, 5%) scale(1.1);
+  }
+  100% {
+    transform: translate(-5%, 10%) scale(0.9);
+  }
 }
 
 /* ======================== */
@@ -110,7 +116,7 @@ a {
 }
 
 .ping-dot::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   border-radius: 9999px;
@@ -120,7 +126,7 @@ a {
 }
 
 .ping-dot::after {
-  content: "";
+  content: '';
   position: relative;
   display: inline-flex;
   width: 8px;
@@ -130,7 +136,8 @@ a {
 }
 
 @keyframes ping {
-  75%, 100% {
+  75%,
+  100% {
     transform: scale(2);
     opacity: 0;
   }

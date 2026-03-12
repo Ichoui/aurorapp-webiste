@@ -28,7 +28,7 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
 
-  background: rgba(0, 30, 73, 0.7);                    /* était rgba(15, 35, 27, 0.7) */
+  background: rgba(0, 30, 73, 0.7); /* était rgba(15, 35, 27, 0.7) */
   border: 1px solid rgba(105, 191, 175, 0.1);
 }
 
@@ -99,8 +99,7 @@
 .btnPrimary:hover {
   /*box-shadow: 0 0 30px rgba(0, 255, 149, 0.3);*/
 
-  box-shadow: 0 0 30px rgba(105, 191, 175, 0.3);  /* était rgba(0, 255, 149, 0.3) */
-
+  box-shadow: 0 0 30px rgba(105, 191, 175, 0.3); /* était rgba(0, 255, 149, 0.3) */
 }
 
 .btnSecondary {
@@ -119,7 +118,7 @@
   font-weight: 700;
   cursor: pointer;
   transition: background-color 0.2s;
-  background: rgba(0, 30, 73, 0.7);                    /* était rgba(15, 35, 27, 0.7) */
+  background: rgba(0, 30, 73, 0.7); /* était rgba(15, 35, 27, 0.7) */
   border: 1px solid rgba(105, 191, 175, 0.2);
 }
 

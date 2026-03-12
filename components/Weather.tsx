@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
 // Section Météo Intégrée
-import styles from "./style/Weather.module.css";
-import { useTranslation } from "react-i18next";
+import styles from './style/Weather.module.css';
+import { useTranslation } from 'react-i18next';
 
-const WEATHER_ICONS = ["calendar_month", "cloudy", "air"] as const;
+const WEATHER_ICONS = ['calendar_month', 'cloudy', 'air'] as const;
 
 export const Weather = () => {
   const { t } = useTranslation();
 
-  const items = t("weather.items", { returnObjects: true }) as Array<{
+  const items = t('weather.items', { returnObjects: true }) as Array<{
     title: string;
     description: string;
   }>;
@@ -20,16 +20,23 @@ export const Weather = () => {
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.headerLeft}>
-            <h2 className={styles.supra}>{t("weather.supra")}</h2>
-            <h3 className={styles.title}>{t("weather.title")}</h3>
+            <h2 className={styles.supra}>{t('weather.supra')}</h2>
+            <h3 className={styles.title}>{t('weather.title')}</h3>
             <p className={styles.description}>
-              {t("weather.description").split("OpenWeatherMap").map((part, i, arr) =>
-                i < arr.length - 1 ? (
-                  <span key={i}>{part}<strong>OpenWeatherMap</strong></span>
-                ) : (
-                  <span key={i}>{part}</span>
-                )
-              )}
+              {t('weather.description')
+                .split('OpenWeatherMap')
+                .map((part, i, arr) =>
+                  i < arr.length - 1 ? (
+                    <span key={i}>
+                      {part}
+                      <strong>
+                        <a href="https://openweathermap.org/  ">OpenWeatherMap</a>
+                      </strong>
+                    </span>
+                  ) : (
+                    <span key={i}>{part}</span>
+                  ),
+                )}
             </p>
           </div>
 
@@ -37,17 +44,12 @@ export const Weather = () => {
           <div className={styles.headerRight}>
             <div className={styles.quoteCard}>
               <div className={styles.quoteHeader}>
-                <span
-                  className="material-symbols-outlined"
-                  style={{ fontSize: "2.25rem", color: "var(--primary)" }}
-                >
+                <span className="material-symbols-outlined" style={{ fontSize: '2.25rem', color: 'var(--primary)' }}>
                   cloud
                 </span>
-                <span className={styles.quoteTitle}>{t("weather.quoteTitle")}</span>
+                <span className={styles.quoteTitle}>{t('weather.quoteTitle')}</span>
               </div>
-              <p className={styles.quoteText}>
-                &ldquo;{t("weather.quoteText")}&rdquo;
-              </p>
+              <p className={styles.quoteText}>&ldquo;{t('weather.quoteText')}&rdquo;</p>
             </div>
           </div>
         </div>
