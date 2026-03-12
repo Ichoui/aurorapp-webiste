@@ -113,12 +113,16 @@
 
 .image {
     object-fit: cover;
-    filter: grayscale(1) brightness(0.75);
+    /*filter: grayscale(1) brightness(0.75);*/
     transition: filter 0.7s;
 }
 
 .image:hover {
-    filter: grayscale(0) brightness(1);
+    /*filter: grayscale(0) brightness(1);*/
+    filter: grayscale(1) brightness(0.75);
+    transition: filter 0.7s;
+
+
 }
 
 /* Floating badge */

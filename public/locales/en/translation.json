@@ -1,0 +1,85 @@
+{
+  "header": {
+    "nav": {
+      "features": "Features",
+      "noaaData": "NOAA Data",
+      "liveMap": "Live Map"
+    },
+    "cta": "Sign In"
+  },
+  "hero": {
+    "badge": "Live Auroras",
+    "subtitle": "Chase the northern lights in real time with style and unmatched scientific precision.",
+    "downloadButton": "Download on Google Play",
+    "learnMore": "Learn more",
+    "stats": {
+      "downloads": "Downloads",
+      "dailyUsers": "Daily users",
+      "since": "Online since"
+    }
+  },
+  "features": {
+    "supra": "Science & Precision",
+    "title": "Scientific Precision in real time.",
+    "description": "The app uses the most reliable data streams on the planet to guarantee your observations.",
+    "items": [
+      {
+        "title": "NOAA/SWPC Data",
+        "description": "Direct feeds from the Space Weather Prediction Center for unfiltered analysis."
+      },
+      {
+        "title": "Privacy First",
+        "description": "We collect no personal data. Your browsing is 100% anonymous and secure."
+      },
+      {
+        "title": "Mapping",
+        "description": "3D visualisation of the auroral oval, OVATION model, Bz Bt charts and KP index"
+      }
+    ]
+  },
+  "designFirst": {
+    "supra": "The Aurorapp Experience",
+    "title": "Data science meets premium design.",
+    "text": "While the data is functional and comes straight from NOAA/SWPC, Aurorapp stands out with a modern, smooth and aesthetic interface.",
+    "quote": "It's not just data; it's a seamless experience designed for the modern explorer.",
+    "badge": "Modern\u00a0UI/UX"
+  },
+  "weather": {
+    "supra": "Integrated Weather",
+    "title": "Don't let clouds ruin your view.",
+    "description": "Combining weather data and auroral predictions is the key to success. Aurorapp integrates OpenWeatherMap feeds to give you a complete view of the local sky.",
+    "quoteTitle": "Optimal Visibility",
+    "quoteText": "Find the best observation windows by correlating the Kp index with real-time cloud cover.",
+    "items": [
+      {
+        "title": "7-day Forecasts",
+        "description": "Plan your expeditions with detailed hourly and daily forecasts for every spot."
+      },
+      {
+        "title": "Cloud Cover",
+        "description": "Crucial data: track cloud evolution in real time to find a clear sky."
+      },
+      {
+        "title": "Practical Data",
+        "description": "Sunrise/sunset times, wind speed and humidity to prepare your gear."
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "The indispensable tool for your photography and travels in northern countries",
+    "authorRole": "Photographer and Aurorapp developer",
+    "mapLink": "View the world map",
+    "avatarAlt": "Profile picture M'"
+  },
+  "callToAction": {
+    "title": "Ready for the show?",
+    "subtitle": "Join thousands of enthusiasts and never miss a northern lights display again.",
+    "button": "Install Aurorapp for free"
+  },
+  "footer": {
+    "privacy": "Privacy",
+    "contact": "Contact",
+    "copyright": "© 2026 Aurorapp - Northern Lights. Data powered by SWPC, NOAA."
+  }
+}
+

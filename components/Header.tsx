@@ -1,8 +1,14 @@
+"use client";
+
 // Navigation
 import Image from "next/image";
 import styles from "./style/Header.module.css";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 
 export const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
@@ -15,15 +21,17 @@ export const Header = () => {
       {/* Desktop nav */}
       <div className={styles.desktopNav}>
         <nav className={styles.navLinks}>
-          <a href="#" className={styles.navLink}>Fonctionnalités</a>
-          <a href="#" className={styles.navLink}>Données NOAA</a>
-          <a href="#" className={styles.navLink}>Carte Live</a>
+          <a href="#" className={styles.navLink}>{t("header.nav.features")}</a>
+          <a href="#" className={styles.navLink}>{t("header.nav.noaaData")}</a>
+          <a href="#" className={styles.navLink}>{t("header.nav.liveMap")}</a>
         </nav>
-        <button className={styles.ctaButton}>Se connecter</button>
+        <LanguageSwitcher />
+        <button className={styles.ctaButton}>{t("header.cta")}</button>
       </div>
 
       {/* Mobile hamburger */}
       <div className={styles.mobileMenu}>
+        <LanguageSwitcher />
         <span className="material-symbols-outlined" style={{ color: "#f1f5f9" }}>menu</span>
       </div>
     </header>

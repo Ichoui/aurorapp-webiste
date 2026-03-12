@@ -1,0 +1,85 @@
+{
+  "header": {
+    "nav": {
+      "features": "Fonctionnalités",
+      "noaaData": "Données NOAA",
+      "liveMap": "Carte Live"
+    },
+    "cta": "Se connecter"
+  },
+  "hero": {
+    "badge": "Aurores en direct",
+    "subtitle": "Chassez les aurores boréales en temps réel avec style et précision scientifique.",
+    "downloadButton": "Télécharger sur Google Play",
+    "learnMore": "En savoir plus",
+    "stats": {
+      "downloads": "Téléchargements",
+      "dailyUsers": "Utilisateurs quotidien",
+      "since": "Présent depuis"
+    }
+  },
+  "features": {
+    "supra": "Science & Précision",
+    "title": "Précision Scientifique en temps réel.",
+    "description": "L'application utilise les flux de données les plus fiables de la planète pour garantir vos observations.",
+    "items": [
+      {
+        "title": "Données NOAA/SWPC",
+        "description": "Flux directs du Space Weather Prediction Center pour une analyse sans intermédiaire."
+      },
+      {
+        "title": "Respect de la Vie Privée",
+        "description": "Nous ne collectons aucune donnée personnelle. Votre navigation est 100% anonyme et sécurisée."
+      },
+      {
+        "title": "Cartographie",
+        "description": "Visualisation 3D de l'ovale auroral, OVATION model, graphiques de Bz Bt et index KP"
+      }
+    ]
+  },
+  "designFirst": {
+    "supra": "L'Expérience Aurorapp",
+    "title": "La science des données rencontre le design premium.",
+    "text": "Alors que les données sont fonctionnelles et proviennent directement de la NOAA/SWPC, Aurorapp se distingue par une interface moderne, fluide et esthétique.",
+    "quote": "Ce ne sont pas seulement des données ; c'est une expérience fluide conçue pour l'explorateur moderne.",
+    "badge": "UI/UX\u00a0moderne"
+  },
+  "weather": {
+    "supra": "Météo Intégrée",
+    "title": "Ne laissez pas les nuages gâcher votre vue.",
+    "description": "Le croisement des données météo et des prédictions aurorales est la clé du succès. Aurorapp intègre les flux OpenWeatherMap pour vous offrir une vision complète du ciel local.",
+    "quoteTitle": "Visibilité Optimale",
+    "quoteText": "Trouvez les meilleures fenêtres d'observation en corrélant l'indice Kp avec la couverture nuageuse en temps réel.",
+    "items": [
+      {
+        "title": "Prévisions 7 jours",
+        "description": "Anticipez vos expéditions avec des prévisions horaires et quotidiennes détaillées pour chaque spot."
+      },
+      {
+        "title": "Couverture Nuageuse",
+        "description": "Donnée cruciale : suivez l'évolution des nuages en temps réel pour trouver un ciel dégagé."
+      },
+      {
+        "title": "Données Pratiques",
+        "description": "Heures de lever/coucher du soleil, vitesse du vent et humidité pour préparer votre équipement."
+      }
+    ]
+  },
+  "testimonial": {
+    "quote": "L'outil indispensable pour vos photographies et vos voyages dans les pays du Nord",
+    "authorRole": "Photographe, et développeur d'Aurorapp",
+    "mapLink": "Voir la carte mondiale",
+    "avatarAlt": "Photo de profil M'"
+  },
+  "callToAction": {
+    "title": "Prêt pour le spectacle ?",
+    "subtitle": "Rejoignez des milliers de passionnés et ne ratez plus jamais une aurore boréale.",
+    "button": "Installer Aurorapp gratuitement"
+  },
+  "footer": {
+    "privacy": "Confidentialité",
+    "contact": "Contact",
+    "copyright": "© 2026 Aurorapp - Northern Lights. Données propulsées par la SWPC, NOAA."
+  }
+}
+

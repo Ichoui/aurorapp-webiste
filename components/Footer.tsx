@@ -1,8 +1,13 @@
+"use client";
+
 // Footer
 import Image from "next/image";
 import styles from "./style/Footer.module.css";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -13,10 +18,10 @@ export const Footer = () => {
           <span className={styles.logoText}>Aurorapp</span>
         </div>
         <nav className={styles.links}>
-          <a href="#" className={styles.link}>Confidentialité</a>
-          <a href="#" className={styles.link}>Contact</a>
+          <a href="#" className={styles.link}>{t("footer.privacy")}</a>
+          <a href="#" className={styles.link}>{t("footer.contact")}</a>
         </nav>
-        <p className={styles.copy}>© 2026 Aurorapp - Northern Lights. Données propulsées par la SWPC, NOAA.</p>
+        <p className={styles.copy}>{t("footer.copyright")}</p>
       </div>
     </footer>
   );

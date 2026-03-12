@@ -1,80 +1,70 @@
+"use client";
+
 // Section Météo Intégrée
 import styles from "./style/Weather.module.css";
+import { useTranslation } from "react-i18next";
 
-const weatherFeatures = [
-    {
-        icon: "calendar_month",
-        title: "Prévisions 7 jours",
-        description:
-            "Anticipez vos expéditions avec des prévisions horaires et quotidiennes détaillées pour chaque spot.",
-    },
-    {
-        icon: "cloudy",
-        title: "Couverture Nuageuse",
-        description:
-            "Donnée cruciale : suivez l'évolution des nuages en temps réel pour trouver un ciel dégagé.",
-    },
-    {
-        icon: "air",
-        title: "Données Pratiques",
-        description:
-            "Heures de lever/coucher du soleil, vitesse du vent et humidité pour préparer votre équipement.",
-    },
-] as const;
+const WEATHER_ICONS = ["calendar_month", "cloudy", "air"] as const;
 
 export const Weather = () => {
-    return (
-        <section className={styles.section}>
-            <div className={styles.container}>
-                {/* Header */}
-                <div className={styles.header}>
-                    <div className={styles.headerLeft}>
-                        <h2 className={styles.supra}>Météo Intégrée</h2>
-                        <h3 className={styles.title}>
-                            Ne laissez pas les nuages gâcher votre vue.
-                        </h3>
-                        <p className={styles.description}>
-                            Le croisement des données météo et des prédictions aurorales est
-                            la clé du succès. Aurorapp intègre les flux{" "}
-                            <strong>OpenWeatherMap</strong> pour vous offrir une vision
-                            complète du ciel local.
-                        </p>
-                    </div>
+  const { t } = useTranslation();
 
-                    {/* Quote card */}
-                    <div className={styles.headerRight}>
-                        <div className={styles.quoteCard}>
-                            <div className={styles.quoteHeader}>
+  const items = t("weather.items", { returnObjects: true }) as Array<{
+    title: string;
+    description: string;
+  }>;
+
+  return (
+    <section className={styles.section}>
+      <div className={styles.container}>
+        {/* Header */}
+        <div className={styles.header}>
+          <div className={styles.headerLeft}>
+            <h2 className={styles.supra}>{t("weather.supra")}</h2>
+            <h3 className={styles.title}>{t("weather.title")}</h3>
+            <p className={styles.description}>
+              {t("weather.description").split("OpenWeatherMap").map((part, i, arr) =>
+                i < arr.length - 1 ? (
+                  <span key={i}>{part}<strong>OpenWeatherMap</strong></span>
+                ) : (
+                  <span key={i}>{part}</span>
+                )
+              )}
+            </p>
+          </div>
+
+          {/* Quote card */}
+          <div className={styles.headerRight}>
+            <div className={styles.quoteCard}>
+              <div className={styles.quoteHeader}>
                 <span
-                    className="material-symbols-outlined"
-                    style={{ fontSize: "2.25rem", color: "var(--primary)" }}
+                  className="material-symbols-outlined"
+                  style={{ fontSize: "2.25rem", color: "var(--primary)" }}
                 >
                   cloud
                 </span>
-                                <span className={styles.quoteTitle}>Visibilité Optimale</span>
-                            </div>
-                            <p className={styles.quoteText}>
-                                &ldquo;Trouvez les meilleures fenêtres d&apos;observation en
-                                corrélant l&apos;indice Kp avec la couverture nuageuse en temps
-                                réel.&rdquo;
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Grid */}
-                <div className={styles.grid}>
-                    {weatherFeatures.map((f) => (
-                        <div key={f.title} className={styles.card}>
-                            <div className={styles.iconWrap}>
-                                <span className="material-symbols-outlined">{f.icon}</span>
-                            </div>
-                            <h4 className={styles.cardTitle}>{f.title}</h4>
-                            <p className={styles.cardDesc}>{f.description}</p>
-                        </div>
-                    ))}
-                </div>
+                <span className={styles.quoteTitle}>{t("weather.quoteTitle")}</span>
+              </div>
+              <p className={styles.quoteText}>
+                &ldquo;{t("weather.quoteText")}&rdquo;
+              </p>
             </div>
-        </section>
-    );
+          </div>
+        </div>
+
+        {/* Grid */}
+        <div className={styles.grid}>
+          {items.map((item, idx) => (
+            <div key={item.title} className={styles.card}>
+              <div className={styles.iconWrap}>
+                <span className="material-symbols-outlined">{WEATHER_ICONS[idx]}</span>
+              </div>
+              <h4 className={styles.cardTitle}>{item.title}</h4>
+              <p className={styles.cardDesc}>{item.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };

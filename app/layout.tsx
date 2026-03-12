@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../components/style/globals.css";
 import React from 'react';
+import { I18nProvider } from "@/components/I18nProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -62,7 +63,7 @@ export default function RootLayout({
           <title>Aurorapp</title>
       </head>
       <body className={inter.variable} style={{ fontFamily: "var(--font-inter), Inter, sans-serif" }}>
-        {children}
+        <I18nProvider>{children}</I18nProvider>
       </body>
     </html>
   );

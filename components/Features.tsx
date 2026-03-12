@@ -1,56 +1,42 @@
+"use client";
+
 // Grille de fonctionnalités
 import styles from "./style/Features.module.css";
+import { useTranslation } from "react-i18next";
 
-const features = [
-  {
-    icon: "monitoring",
-    title: "Données NOAA/SWPC",
-    description: "Flux directs du Space Weather Prediction Center pour une analyse sans intermédiaire.",
-  },
-  // {
-  //   icon: "notifications_active",
-  //   title: "Alertes Intelligentes",
-  //   description: "Notifications instantanées dès que l'indice Kp atteint le seuil critique dans votre région.",
-  // },
-  {
-    // Avant : notifications_active / Alertes Intelligentes
-    icon: "shield",
-    title: "Respect de la Vie Privée",
-    description: "Nous ne collectons aucune donnée personnelle. Votre navigation est 100% anonyme et sécurisée.",
-  },
-  {
-    icon: "map",
-    title: "Cartographie",
-    description: "Visualisation 3D de l'ovale auroral, OVATION model, graphiques de Bz Bt et index KP",
-  },
-] as const;
+const FEATURE_ICONS = ["monitoring", "shield", "map"] as const;
 
 export const Features = () => {
+  const { t } = useTranslation();
+
+  const items = t("features.items", { returnObjects: true }) as Array<{
+    title: string;
+    description: string;
+  }>;
+
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.headerLeft}>
-            <h2 className={styles.supra}>Science &amp; Précision</h2>
-            <h3 className={styles.title}>Précision Scientifique en temps réel.</h3>
+            <h2 className={styles.supra}>{t("features.supra")}</h2>
+            <h3 className={styles.title}>{t("features.title")}</h3>
           </div>
-          <p className={styles.headerRight}>
-            L&apos;application utilise les flux de données les plus fiables de la planète pour garantir vos observations.
-          </p>
+          <p className={styles.headerRight}>{t("features.description")}</p>
         </div>
 
         {/* Grid */}
         <div className={styles.grid}>
-          {features.map((f) => (
-            <div key={f.title} className={styles.card}>
+          {items.map((item, idx) => (
+            <div key={item.title} className={styles.card}>
               <div className={styles.iconWrap}>
                 <span className="material-symbols-outlined" style={{ fontSize: "1.875rem" }}>
-                  {f.icon}
+                  {FEATURE_ICONS[idx]}
                 </span>
               </div>
-              <h4 className={styles.cardTitle}>{f.title}</h4>
-              <p className={styles.cardDesc}>{f.description}</p>
+              <h4 className={styles.cardTitle}>{item.title}</h4>
+              <p className={styles.cardDesc}>{item.description}</p>
             </div>
           ))}
         </div>
