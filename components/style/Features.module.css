@@ -1,7 +1,7 @@
 .section {
   /*background-color: var(--bg-dark);*/
   padding: 6rem 1.5rem;
-  background-color: rgba(0, 30, 73, 0.8);  /* était var(--bg-dark) pur, maintenant bg-background-dark/80 */
+  /*background-color: rgba(0, 30, 73, 0.8);  !* était var(--bg-dark) pur, maintenant bg-background-dark/80 *!*/
 }
 
 @media (min-width: 1024px) {

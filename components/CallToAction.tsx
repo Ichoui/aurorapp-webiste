@@ -10,10 +10,15 @@ export const CallToAction = () => {
           Rejoignez des milliers de passionnés et ne ratez plus jamais une aurore boréale.
         </p>
         <div className={styles.btnWrap}>
-          <button className={styles.btn}>
-            <span className="material-symbols-outlined">install_mobile</span>
+          <a
+            href="https://play.google.com/store/apps/details?id=io.aurora.start"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.btn}
+          >
+            <span className="material-symbols-outlined">android</span>
             Installer Aurorapp gratuitement
-          </button>
+          </a>
         </div>
       </div>
     </section>

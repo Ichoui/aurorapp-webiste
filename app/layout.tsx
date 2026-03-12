@@ -14,7 +14,35 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Aurorapp - Chassez les aurores boréales",
   description:
-    "Chassez les aurores boréales en temps réel avec une précision scientifique inégalée.",
+    "Chassez les aurores boréales en temps réel avec style et précision scientifique",
+    icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
+  openGraph: {
+    title: "Aurorapp - Chassez les aurores boréales",
+    description:
+      "Chassez les aurores boréales en temps réel avec style et précision scientifique",
+    url: "https://aurorapp.io",
+    siteName: "Aurorapp",
+    images: [
+      {
+        url: "/banner.png",
+        width: 1200,
+        height: 630,
+        alt: "Aurorapp - Chassez les aurores boréales",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Aurorapp - Chassez les aurores boréales",
+    description:
+      "Chassez les aurores boréales en temps réel avec style et précision scientifique",
+    images: ["/banner.png"],
+  },
 };
 
 export default function RootLayout({
@@ -30,7 +58,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
           rel="stylesheet"
         />
-          <title>Aurorapppp</title>
+          
+          <title>Aurorapp</title>
       </head>
       <body className={inter.variable} style={{ fontFamily: "var(--font-inter), Inter, sans-serif" }}>
         {children}

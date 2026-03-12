@@ -20,8 +20,8 @@ const features = [
   },
   {
     icon: "map",
-    title: "Cartographie HD",
-    description: "Visualisation 3D de l'ovale auroral superposée aux conditions météo locales.",
+    title: "Cartographie",
+    description: "Visualisation 3D de l'ovale auroral, OVATION model, graphiques de Bz Bt et index KP",
   },
 ] as const;
 

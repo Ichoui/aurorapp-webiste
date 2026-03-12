@@ -40,7 +40,7 @@ export const DesignFirst = () => {
                         </div>
                         {/* Floating badge */}
                         <div className={styles.floatingBadge}>
-                            <span className={styles.floatingText}>UI/UX d&apos;exception</span>
+                            <span className={styles.floatingText}>UI/UX&nbsp;moderne</span>
                         </div>
                     </div>
                 </div>
