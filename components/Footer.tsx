@@ -32,8 +32,9 @@ export const Footer = () => {
         </nav>
         <p className={styles.copy}>
           {t('footer.copyright.me')}
+          &nbsp;
           <b>
-            <a href="#">{t('footer.copyright.swpc')}</a>
+            <a href="https://www.swpc.noaa.gov/">{t('footer.copyright.swpc')}</a>
           </b>
         </p>
       </div>

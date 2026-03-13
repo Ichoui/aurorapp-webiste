@@ -79,7 +79,8 @@
   "footer": {
     "privacy": "Privacy",
     "contact": "Contact",
-    "copyright": "© 2026 Aurorapp - Northern Lights. Data powered by SWPC, NOAA."
+    "copyright.me": "© 2026 Aurorapp - Northern Lights.",
+    "copyright.swpc": "Data powered by SWPC, NOAA."
   }
 }
 
